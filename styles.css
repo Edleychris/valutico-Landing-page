@@ -1,331 +1,422 @@
-
-* {
-    margin: 0;
-    padding: 0;
+*::before, *, *::after{
     box-sizing: border-box;
-    
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
 }
+
+a, body{
+    color: #000;
+}
+/* h1{
+    font-size: 54px;
+
+} */
+a:hover,
+a:focus{
+    color:  #6FC247;
+}
+
 body{
-    font-family: 'Poppins', sans-serif;
+    /* font: 1.3rem/1.2 'Poppins', sans-serif; */
+    
 }
 @font-face {
     font-family: 'Poppins';
     src: url('https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;400&display=swap');
     
 }
-.navHeader {
-    width: 100%;
+
+body, ul{margin: 0;}
+
+header{text-align: center; padding-block: 3em; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+
+
+}
+
+.container{
+    width:1512px;
+    height:135px;
     display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    height: 60px;
     align-items: center;
-    justify-content: space-around;
-    background-color: #fff;
-    height: 15vh;
-    box-shadow: 0px 2px 2px 0px rgba(3, 3, 3, 0.199);
-    position: fixed;
 }
 ul{
     display: flex;
-    flex-direction: row;
-    gap: 50px;
+    gap: 2em;
+    font-size: 30px;
 }
-ul li{
-    list-style:none;
+.logoHeader{
+    width: 169.85px;
+    height: 23px;
 }
-ul li a{
-    text-decoration: none;
-    color: #000;
-    font-weight: 700;
-    font-size: 20px;
+.nav_item{
+width: 100px;
+height: 47px;
+padding: 10px;
+gap:54px;
 }
-ul li a i{
-    padding-left: 5px;
+.nav_item a{
+    color: rgb(153, 149, 149);
+    font-weight: 500;
 }
- button i{
-padding-left: 10px;
+.active a{
+    color: rgba(4, 11, 59, 0.533);
 }
- button{
-   padding: 25px 40px;
-    border: 1px solid #6FC247;
-    outline: none;
-    cursor: pointer;
-    border-radius: 16px;
-    background-color: #6FC247;
-    font-weight: 700;
-    font-size: 20px;
-    color: #fff;
-    white-space: nowrap;
+.btn{
+background-color: #6FC247;
+border-radius: 16px;
+padding:.5em 1em ;
+height: 65px;
+width: 240px;
+display: inline-block;
+color: white;
+font-size: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+box-shadow: 0 5px 12px #9bff69; 
+border: 1px solid #6FC247;
+
 }
-.world{
-    
-    font-weight: 700;
-    font-size: 7rem;
-    padding-top: 2em;
-    text-align: center;
-    padding-bottom: 7px ;
-    color: #000;
-    line-height: 1.5;
-}
-.valut{
-    padding-top: .5rem;
-    font-weight: 300;
-    text-align: center;
-    color: #000;
-    font-size: 2.3rem;
-    line-height: 2;
-}
-#login{
-    margin-top: 10em;
-    width: 100%;
-    height: 10vh;
+.World{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content:center;
-    gap: 3em;
+    margin-top: 1rem;
+
 }
-#sign{
-    background-color: transparent;
-    border: 3px solid #6FC247;
+.World h1{
+    font-size: 64px;
+    gap: 10px;
+    font-family: 'Poppins';
+    height : 150px;
+    font-weight: 800;
+    color: #373737;
+    font-family: 'Manrope';
+    margin-bottom: -.5rem;
+}
+.World p{
+    font-weight: 500;
+    font-size: 28px;
+    /* padding-top: 1em; */
+    /* padding-bottom: .25em; */
+    text-align: center;
+    /* padding-bottom: 7px; */
+    color: #373737;
+    line-height: 43.2px;
+    width:970px;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    width: 588px;
+    height: 75px;
+    margin-top: 1rem;
+
+}
+.request-btn,
+.login-btn{
+    width: 578px;
+    height: 75px;
+    border-radius: 16px;
+    padding: 24px, 40px, 24px, 40px;
+    border: 1px solid #6FC247;
+
+}
+.request-btn{
+    background-color: #6FC247;
+    color: white;
+    font-size: 20px;
+
+}
+.login-btn{
+    font-size: 20px;
+    color: #6FC247;
+    background-color: white;
+}
+/* .site_section{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    width: 1260px;
+    background-color: white;
+} */
+.site_img1{
+    /* width:1260px ; */
+    height: 637px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1260px auto;
+    margin-top: 3rem;
+}
+/* .site_picture{
+    background-color: red;
+    align-self: center;
+} */
+.grouped{
+    display: f
+};
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+.groupexd_section_text{
+    background-color: blue;
+    width: 1062px;
+
+    margin-top: 3rem;
+
+
+.Trusted{
+    width: 849px;
+}
+/* h1, h2, h3, h4, h5, h6{margin-top: 0;} */
+
+/* .container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+   justify-content: space-between;
+   background-color: blue;
+} */
+
+.btn:hover,
+.btn:focus{
+    background-color: #fff;
     color: #6FC247;
 }
-.image4-container{
-    margin-top: 8em; 
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1em;
-}
-.image4-container img{
-    width: 100%;
-    height: 100%;
-    
-}
-#trusted {
 
-font-style: normal;
-    font-weight: 800;
-    font-size: 32px;
-    line-height: 44px;
-    /* identical to box height */
-
+section{
+    width: 90%;
+    max-width: 1200px; ;
+    margin: 0 auto;
     text-align: center;
-
-    color: #373737;
 }
 
-#global {
+.valut {
     padding-top: .5rem;
     font-weight: 300;
     text-align: center;
     color: #000;
     font-size: 2.3rem;
-    line-height: 1;
+    line-height: 1.5;
+}
+/* .request-btn{
+    background-color: #6FC247;
+    color: #fff;
+    padding: 1.5rem;
+    width: 200px;
+    border: none;
+    border-radius: 16px;
     font-weight: bold;
-    margin-bottom: 7px;
-
+    font-size: 17px;
 }
+.login-btn {
+    background-color: #F5F5F5;
+    color: #6FC247;
+    padding: 1.5rem;
+    width: 200px;
+    border-color: #6FC247;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 0.5rem;
+} */
 
-
-/* images section */
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-.container div{
-    background-color: #F9F9F9;
-    margin: 25px 30px;
-
-}
-.color img{
-    padding: 10px 20px;
-}
-
-
- /* valutico section */
-
-
- .val{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* .image-4{
     width: 100%;
-    height: 50vh;
-    margin-top: 40px;
-    background-color: #000;
-    color: white;
- }
- .val .valu1{
-    width: 68%;
-   
- }
-.val .valu1 h1{
-    font-size: 24px;
-    padding-bottom: 5px;
-    text-align: left;
-}
-
- .val .valu2{
-    margin-top: 60px;
-    gap: 40px;
-    display: flex;
-    flex-direction: row;
-   
-    width: 68%;
- }
- .val .valu2 .why{
-   
-    width: 40%;
-    height: 15vh;
-
- }
-.valu2 .why .h1{
-    padding-bottom: 5px;
-    text-align: left;
-
-}
-
-.container-last{
-    display: flex;
-}
-.last-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin :20px 50px;
-}
-.last-text h1{
-    font-style: normal;
-        font-weight: 800;
-        font-size: 32px;
-        line-height: 44px;
-        
+    max-width: 1140px auto;
+    height: auto;
+    margin: 0 auto;
+} */
+.T/* rusted{
+        font-weight: 700;
+        font-size: 2rem;
+        padding-top: 1em;
         text-align: center;
-        padding-top: 20px;
-        margin-bottom: 20px;
+        color: #000;
+        line-height: 1;
 }
-.last-text p{
-    font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 150%;
-       padding-left: 50px;
-     
-        color: #111111;
+.global{
+        padding-top: .1rem;
+        font-weight: 200;
+        text-align: center;
+        color: #000;
+        font-size: 1.3rem;
+        line-height: 1;
 }
-.last-text h2{
-font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 33px;
-padding-left: 50px;
-    color: #111111;
-    margin-bottom: 20px;
-    margin-top: 40px;
-
-}
-.last-text h3{
-    font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 150%;
-       margin-bottom: 25px;
+ */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #F9F9F9;
+     margin: 25px 30px;
+   
 }
 
+.i/* mage-grid img {
+    margin-top: 1rem auto;
+    width: 100%;
+    padding: 10px 20px;
+    
+}
+ */
+.container-valutico{
+    background-color: black;
+    width: 100%;
+    /* max-width: 1200px; */
+    
 
-#lastbtn{
-        height: 5vh;
-        margin: 50px auto;
+}
+.why{
+    padding: 1em;
+    color: white;
+    text-align: left;
+    font-size: 70px;
+    
+}
+/* .why h1 p {
+    text-align: center;
+    font-size: 50px;
+    
+} */
+
+.container-3{
+    color: white;
+    width: 100%;
+    max-width: 1200px;
+}
+.row3{
         display: flex;
+        text-align: center;
+/* font-size: 100px; */
+        color: white;
+        gap: 50px;
+        padding: 1em ;
+}
+
+
+.val-container {
+
+display: flex;
+flex-direction: column;
+justify-content:space-evenly;
+align-items:center; 
+font-size: 100px;
+}
+.las-button{
+        display: flex;
+        justify-content: center;
         align-items: center;
-        justify-items: center;
-        margin-bottom: 50px;
-}
-/* Media queries for mobile screens */
-@media only screen and (max-width: 600px) {
-
-    /* Adjust the font size and padding of the navHeader */
-    .navHeader {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    /* Adjust the font size and line height of the h1 and p elements */
-    .world,
-    .valut {
-        font-size: 24px;
-        line-height: 30px;
-    }
-
-    /* Adjust the font size and margin of the login buttons */
-    #login button {
-        font-size: 14px;
-        margin: 10px;
-    }
-
-    /* Adjust the width and height of the images in the container */
-    .container img {
-        width: 80px;
-        height: 80px;
-    }
-
-    /* Adjust the font size and margin of the valu1 and valu2 elements */
-    .valu1 h1,
-    .valu1 p,
-    .valu2 h1,
-    .valu2 p {
-        font-size: 18px;
-        margin: 10px;
-    }
-
-    /* Adjust the width and height of the why divs */
-    .why {
         width: 100%;
-        height: 200px;
-    }
+       
+}
+.req{
+background-color: #6FC247;
+padding: 1.5rem;
+    width: 200px;
+    border: none;
+    border-radius: 16px;
+    font-weight: bold;
+    font-size: 17px;
 }
 
-/* Media queries for tablet screens */
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
 
-    /* Adjust the font size and padding of the navHeader */
-    .navHeader {
-        font-size: 16px;
-        padding: 20px;
-    }
+@media screen and (min-width:100px)  and (max-width:500px){
 
-    /* Adjust the font size and line height of the h1 and p elements */
-    .world,
-    .valut {
-        font-size: 32px;
-        line-height: 40px;
-    }
+        .val-container{
 
-    /* Adjust the font size and margin of the login buttons */
-    #login button {
-        font-size: 16px;
-        margin: 20px;
-    }
+         display: flex;
+         flex-direction: column;
+         /* font-size: 14px; */
 
-    /* Adjust the width and height of the images in the container */
-    .container img {
-        width: 100px;
-        height: 100px;
-    }
+        }
 
-    /* Adjust the font size and margin of the valu1 and valu2 elements */
-    .valu1 h1,
-    .valu1 p,
-    .valu2 h1,
-    .valu2 p {
-        font-size: 24px;
-        margin: 20px;
-    }
-
-    /* Adjust the width and height of the why divs */
-    .why {
-        width: 33.33%;
-        height: 300px;
-    }
 }
 
+@media screen  and (min-width:900px) {
+
+    /* .val-container {
+
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+    } */
+
+        im/* age{
+            height:50px;
+              
+        }
+ *//* 
+        h1,h2,p{
+
+            font-size: 12px;
+        } */
+
+}
+
+
+
+
+    /* display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    width:100vh; */
+
+
+ .text {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 50px;
+    flex-basis: 50%; */
+}
+
+
+/* 
+.text p {
+    margin: 0;
+} */
+
+/* .image {
+    margin-top:20px;
+     
+}
+ */
+
+ 
+/* 
+ @media (max-width: 900px) {    
+    .btn,
+    .nav_item:first-child{margin-top: 1em;}
+
+    .nav_item + .nav_item{
+        padding-top: .6em;
+    }
+} 
+ */
+ /* @media (min-width: 900px) {
+    .hero .container{
+        background-color: blue;
+
+    }
+    header .hero{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: red;
+    }
+    ul{display: flex;align-items: center; gap: 1em;}
+} */
